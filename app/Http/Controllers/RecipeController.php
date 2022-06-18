@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Project;
+use App\Models\Recipe;
 use Illuminate\Http\Request;
 
-class ProjectController extends Controller
+class RecipeController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,9 +14,9 @@ class ProjectController extends Controller
      */
     public function index()
     {
-        $projects = Project::latest()->paginate(5);
+        $recipes = Recipe::latest()->paginate(5);
 
-        return view('projects.index', compact('projects'));
+        return view('recipes.index', compact('recipes'));
     }
 
     /**
@@ -26,7 +26,7 @@ class ProjectController extends Controller
      */
     public function create()
     {
-        return view('projects.create');
+        return view('recipes.create');
     }
 
     /**
@@ -37,64 +37,64 @@ class ProjectController extends Controller
      */
     public function store(Request $request)
     {
-        Project::create($this->validateProject($request));
+        Recipe::create($this->validateRecipe($request));
 
         // redirecting to show a page
-        return redirect(route('projects.index'));
+        return redirect(route('recipes.index'));
 
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\Project  $project
+     * @param  \App\Models\Recipe  $recipe
      * @return \Illuminate\Http\Response
      */
-    public function show(Project $project)
+    public function show(Recipe $recipe)
     {
-        return view('projects.show', compact('project'));
+        return view('recipes.show', compact('recipe'));
     }
 
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\Project  $project
+     * @param  \App\Models\Recipe  $recipe
      * @return \Illuminate\Http\Response
      */
-    public function edit(Project $project)
+    public function edit(Recipe $recipe)
     {
-        $projects = Project::all();
-        return view('projects.edit', compact('project'));
+        $recipes = Recipe::all();
+        return view('recipes.edit', compact('recipe'));
     }
 
     /**
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Project  $project
+     * @param  \App\Models\Recipe  $recipe
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Project $project)
+    public function update(Request $request, Recipe $recipe)
     {
-        $project->update($this->validateProject($request));
+        $recipe->update($this->validateProject($request));
 
-        return redirect(route('projects.show', $project));
+        return redirect(route('projects.show', $recipe));
     }
 
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\Project  $project
+     * @param  \App\Models\Recipe  $recipe
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Project $project)
+    public function destroy(Recipe $recipe)
     {
-        $project->delete();
+        $recipe->delete();
         return redirect(route('projects.index'));
     }
 
     /**
-     * this function validates the attributes of a Project
+     * this function validates the attributes of a Recipe
      * @param Request $request
      * @return array
      */

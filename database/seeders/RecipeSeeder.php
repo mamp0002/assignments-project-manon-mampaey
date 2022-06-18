@@ -4,7 +4,7 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
 
-class ProjectSeeder extends Seeder
+class RecipeSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -13,6 +13,6 @@ class ProjectSeeder extends Seeder
      */
     public function run()
     {
-        \App\Models\Project::factory(50)->create();
+        \App\Models\Recipe::factory(50)->create();
     }
 }

@@ -20,7 +20,7 @@ Route::get('/', function () {
 });
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-Route::resource('/projects', \App\Http\Controllers\ProjectController::class);
+Route::resource('/recipes', \App\Http\Controllers\RecipeController::class);
 
 Auth::routes();
 
