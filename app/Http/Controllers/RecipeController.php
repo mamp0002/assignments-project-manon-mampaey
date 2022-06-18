@@ -103,7 +103,7 @@ class RecipeController extends Controller
         $validatedAttributes = $request->validate([
             'title'=>'required',
             'description'=>'required',
-            'budget'=>'required|integer|min:0',
+            'time'=>'required|integer|min:0',
         ]);
 
         return $validatedAttributes;
