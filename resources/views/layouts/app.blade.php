@@ -28,35 +28,35 @@
             <li class="secondLiHeader"><h1 class="headerCenter">@yield('header')</h1></li>
         </ul>
         <ul class="navbar-nav ml-auto">
-        <li class="nav-item dropdown user-menu">
-            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
-                <img src="/img/pallets150.jpg"
-                     class="user-image img-circle elevation-2">
-                <span class="d-none d-md-inline btn colour-orange">User: {{ Auth::user()->name }}</span>
-            </a>
-            <ul class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
-                <!-- User image -->
-                <li class="user-header shade">
-                    <img src="/img/pallets150.jpg"
-                         class="img-circle elevation-2"
-                         alt="User Image">
-                    <p>
-                    <h6> {{ Auth::user()->name }}</h6>
-                    <small>Member since {{ Auth::user()->created_at->format('M. Y') }}</small>
-                </li>
-                <!-- Menu Footer-->
-                <li class="user-footer">
-                    <a href="#" class="btn shade ">Profile</a>
-                    <a href="#" class="btn shade float-right"
-                       onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
-                        Sign out
-                    </a>
-                    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
-                        @csrf
-                    </form>
-                </li>
-            </ul>
-        </li>
+            <li class="nav-item dropdown user-menu">
+                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
+                    <img src="img/pokeball.png"
+                         class="user-image img-circle elevation-2" alt="User Image">
+                </a>
+                <ul class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+                    <!-- User image -->
+                    <li class="user-header bg-light">
+                        <img src="img/pokeball.png"
+                             class="img-circle elevation-2"
+                             alt="User Image">
+                        <p>
+                        <h6> {{ Auth::user()->name }}</h6>
+                        <small>Member since {{ Auth::user()->created_at->format('M. Y') }}</small>
+                        </p>
+                    </li>
+                    <!-- Menu Footer-->
+                    <li class="user-footer">
+                        {{--                        <a href="#" class="btn btn-default btn-flat">Profile</a>--}}
+                        <a href="#" class="btn btn-secondary btn-flat float-right"
+                           onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                            Sign out
+                        </a>
+                        <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                            @csrf
+                        </form>
+                    </li>
+                </ul>
+            </li>
         </ul>
     </nav>
 
