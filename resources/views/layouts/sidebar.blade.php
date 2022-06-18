@@ -2,7 +2,7 @@
     {{--    <div class="dropdown-toggle" data-toggle="dropdown">--}}
 
     <div  class="brand-link">
-        <span class="brand-text font-weight-light">Home</span>
+        <span class="brand-text font-weight-light">Get the best Recipes</span>
     </div>
     <div class="sidebar">
         <nav class="mt-4">

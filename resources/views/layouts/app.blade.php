@@ -27,19 +27,6 @@
             </li>
             <li class="secondLiHeader"><h1 class="headerCenter">@yield('header')</h1></li>
         </ul>
-
-        <ul class="navbar-nav ml-auto">
-            <li class="nav-item dropdown user-menu">
-                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
-                    <span class="d-none d-md-inline btn colour-orange">Change Production Line</span>
-                </a>
-                <ul class="dropdown-menu  bg-transparent text-center">
-                    <li>
-                        <p>hello</p>
-                    </li>
-                </ul>
-            </li>
-        </ul>
     </nav>
 
     <!-- Left side column. contains the logo and sidebar -->
