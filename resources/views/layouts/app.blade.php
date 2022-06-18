@@ -27,7 +27,40 @@
             </li>
             <li class="secondLiHeader"><h1 class="headerCenter">@yield('header')</h1></li>
         </ul>
+        <ul>
+        <li class="nav-item dropdown user-menu">
+            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
+                <img src="/img/pallets150.jpg"
+                     class="user-image img-circle elevation-2" alt="Goose">
+                <span class="d-none d-md-inline text-white">User: {{ Auth::user()->name }}</span>
+            </a>
+            <ul class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+                <!-- User image -->
+                <li class="user-header shade">
+                    <img src="/img/pallets150.jpg"
+                         class="img-circle elevation-2"
+                         alt="User Image">
+                    <p>
+                    <h6> {{ Auth::user()->name }}</h6>
+                    <span class="badge colour-orange ">{{ Auth::user()->role }} team</span>
+                    <small>Member since {{ Auth::user()->created_at->format('M. Y') }}</small>
+                </li>
+                <!-- Menu Footer-->
+                <li class="user-footer">
+                    <a href="#" class="btn shade ">Profile</a>
+                    <a href="#" class="btn shade float-right"
+                       onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                        Sign out
+                    </a>
+                    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                        @csrf
+                    </form>
+                </li>
+            </ul>
+        </li>
+        </ul>
     </nav>
+
 
     <!-- Left side column. contains the logo and sidebar -->
 @include('layouts.sidebar')
