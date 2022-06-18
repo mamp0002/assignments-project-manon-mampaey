@@ -15,13 +15,16 @@
     <link href="{{ mix('css/app.css') }}" rel="stylesheet">
 
 </head>
-<body class="hold-transition login-page">
+<body class="hold-transition login-page bg-image">
 <div class="login-box">
 
+    <!-- /.login-logo -->
+
+    <!-- /.login-box-body -->
     <div class="card">
-            <div class="login-logo">
-                <a href="{{ url('/home') }}"><b>{{ config('app.name') }}</b></a>
-            </div>
+        <div class="login-logo">
+            <a href="{{ url('/home') }}"><b>{{ config('app.name') }}</b></a>
+        </div>
         <div class="card-body login-card-body">
             <p class="login-box-msg">Sign in to start your session</p>
 
@@ -67,14 +70,14 @@
                     </div>
 
                     <div class="col-4">
-                        <button type="submit" class="btn btn-primary btn-block">Sign In</button>
+                        <button type="submit" class="btn btn-primary btn-block">{{ __('Sign in') }}</button>
                     </div>
 
                 </div>
             </form>
 
             <p class="mb-1">
-                <a href="{{ route('password.request') }}">I forgot my password</a>
+                <a href="{{ route('password.request') }}">{{ __('I forgot my password') }}</a>
             </p>
             <p class="mb-0">
                 <a href="{{ route('register') }}" class="text-center">Register a new membership</a>
