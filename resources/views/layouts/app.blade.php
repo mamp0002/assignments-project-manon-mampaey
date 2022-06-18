@@ -28,7 +28,7 @@
             <li class="secondLiHeader"><h1 class="headerCenter">@yield('header')</h1></li>
         </ul>
         <ul>
-        <li class="nav-item dropdown user-menu float-right">
+        <li class="nav-item dropdown user-menu">
             <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
                 <img src="/img/bg-img.jpg"
                      class="user-image img-circle elevation-2">
