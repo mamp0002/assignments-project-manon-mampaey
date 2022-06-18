@@ -56,6 +56,10 @@
                                 </div>
                             </div>
                         </div>
+                        <button type="submit" class="btn btn-info btn-lg btn-lg btn-block">Submit</button>
+                        <div class="control">
+                            <a type="button" href="{{ route('recipes.index') }}" class="button is-light">Cancel</a>
+                        </div>
                     </form>
                 </div>
             </div>
