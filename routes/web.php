@@ -21,3 +21,5 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Route::resource('/projects', \App\Http\Controllers\ProjectController::class);
 
 Auth::routes();
+
+URL::forceScheme('https');
