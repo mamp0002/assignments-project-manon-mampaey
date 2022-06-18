@@ -15,7 +15,7 @@ return [
     |
     */
 
-    'name' => env('APP_NAME', 'Portfolio Assignments Manon Mampaey'),
+    'name' => env('APP_NAME', 'Recipe Finder'),
 
     /*
     |--------------------------------------------------------------------------
