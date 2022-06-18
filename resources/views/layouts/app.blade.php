@@ -30,14 +30,14 @@
         <ul>
         <li class="nav-item dropdown user-menu">
             <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
-                <img src="/img/bg-img.jpg"
+                <img src="/img/pallets150.jpg"
                      class="user-image img-circle elevation-2">
                 <span class="d-none d-md-inline text-white">User: {{ Auth::user()->name }}</span>
             </a>
             <ul class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
                 <!-- User image -->
                 <li class="user-header shade">
-                    <img src="/img/bg-img.jpg"
+                    <img src="/img/pallets150.jpg"
                          class="img-circle elevation-2"
                          alt="User Image">
                     <p>
