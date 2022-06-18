@@ -23,7 +23,7 @@
     <!-- /.login-box-body -->
     <div class="card">
         <div class="login-logo">
-            <a href="{{ url('/home') }}"><b>{{ config('app.name') }}</b></a>
+            <a href="{{ url('/projects') }}"><b>{{ config('app.name') }}</b></a>
         </div>
         <div class="card-body login-card-body">
             <p class="login-box-msg">Sign in to start your session</p>
