@@ -1,4 +1,4 @@
-@extends('common.master')
+@extends('layouts.app')
 
 @section('content')
     <section class="hero  is-medium  is-bold is-primary"  style="background: no-repeat center center; background-size: cover;" >
@@ -21,8 +21,6 @@
                         <h1>{{$project->title}}</h1>
                         <p><i>Budget: € {{$project->budget}} ({{$project->type}})</i></p>
                         <p>{{$project->description}}</p>
-                        <p>Groupname: {{$project->group->name}}</p>
-                        <p>Semester: {{$project->group->semester }}</p>
                     </div>
                     <div class="control">
                         <button class="button is-primary"
