@@ -39,6 +39,8 @@ class RecipeController extends Controller
     {
         Recipe::create($this->validateRecipe($request));
 
+
+
         // redirecting to show a page
         return redirect(route('recipes.index'));
 
@@ -105,6 +107,8 @@ class RecipeController extends Controller
             'description'=>'required',
             'time'=>'required|integer|min:0',
         ]);
+
+        $validatedAttributes['image'] = 'https://loremflickr.com/320/240/food';
 
         return $validatedAttributes;
     }

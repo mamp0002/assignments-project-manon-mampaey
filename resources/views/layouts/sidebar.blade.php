@@ -1,4 +1,4 @@
-<aside class="main-sidebar sidebar-dark-gray-dark colour-purple elevation-4">
+<aside class="main-sidebar sidebar-dark-gray-dark elevation-4">
     {{--    <div class="dropdown-toggle" data-toggle="dropdown">--}}
 
     <div  class="brand-link">

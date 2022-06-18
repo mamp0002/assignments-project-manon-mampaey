@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Den Doelder</title>
+    <title>Recipe finder</title>
     <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
@@ -19,7 +19,7 @@
 <body class="hold-transition sidebar-mini layout-fixed">
 <div class="wrapper">
     <!-- Main Header -->
-    <nav class="main-header navbar navbar-expand navbar-light">
+    <nav class="main-header navbar navbar-expand navbar-gray-dark">
         <!-- Left navbar links -->
         <ul class="navbar-nav">
             <li class="nav-item">
