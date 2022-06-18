@@ -5,13 +5,13 @@
         <div class="container">
             <div class="columns">
                 <div class="column is-12"> {{-- These divs are needed for proper layout --}}
-                    <form method="POST" action="{{ route('recipes.update', $project) }}">
+                    <form method="POST" action="{{ route('recipes.update', $recipe) }}">
                         @csrf
                         @method('PUT')
                         <div class="card"> {{-- The form is placed inside a Bulma Card component --}}
                             <header class="card-header">
                                 <p class="card-header-title"> {{-- The Card header content --}}
-                                    Edit the project {{$project->name}}
+                                    Edit the recipe {{$recipe->title}}
                                 </p>
                             </header>
 
@@ -23,7 +23,7 @@
                                         <label class="label">Title</label>
                                         <div class="control">
                                             <input name="title" class="input @error('title') is-danger @enderror"
-                                                   type="text" value="{{$project->title}}">
+                                                   type="text" value="{{$recipe->title}}">
                                         </div>
                                         @error('title')
                                         <p class="help is-danger">{{ $message }}</p>
@@ -35,7 +35,7 @@
                                         <div class="control">
                                             <textarea name="description"
                                                       class="textarea @error('description') is-danger @enderror"
-                                                      type="text">{{$project->description}}</textarea>
+                                                      type="text">{{$recipe->description}}</textarea>
                                         </div>
                                         @error('description')
                                         <p class="help is-danger">{{ $message }}</p>
@@ -43,12 +43,12 @@
                                     </div>
 
                                     <div class="field">
-                                        <label class="label">Budget</label>
+                                        <label class="label">Time</label>
                                         <div class="control">
-                                            <input name="budget" class="input @error('budget') is-danger @enderror"
-                                                   type="text" value="{{$project->budget}}">
+                                            <input name="time" class="input @error('time') is-danger @enderror"
+                                                   type="text" value="{{$recipe->time}}">
                                         </div>
-                                        @error('budget')
+                                        @error('time')
                                         <p class="help is-danger">{{ $message }}</p>
                                         @enderror
                                     </div>
@@ -63,13 +63,13 @@
                                         <button type="reset" class="button is-warning">Reset</button>
                                     </div>
                                     <div class="control">
-                                        <a type="button" href="{{ route('recipes.show', $project) }}" class="button is-light">Cancel</a>
+                                        <a type="button" href="{{ route('recipes.show', $recipe) }}" class="button is-light">Cancel</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </form>
-                    <form method="POST" action="{{route('recipes.destroy', $project)}}">
+                    <form method="POST" action="{{route('recipes.destroy', $recipe)}}">
                         @csrf
                         @method('DELETE')
                         <button  class="button is-primary" type="submit">Delete</button>

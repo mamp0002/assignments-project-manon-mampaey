@@ -10,7 +10,7 @@
                         <div class="card"> {{-- The form is placed inside a Bulma Card component --}}
                             <header class="card-header">
                                 <p class="card-header-title"> {{-- The Card header content --}}
-                                    Add a new project
+                                    Add a new recipe
                                 </p>
                             </header>
 
@@ -22,7 +22,7 @@
                                         <label class="label">Title</label>
                                         <div class="control">
                                             <input name="title" class="input @error('title') is-danger @enderror"
-                                                   type="text" placeholder="Title of the project...">
+                                                   type="text" placeholder="Title of the recipe...">
                                         </div>
                                         @error('title')
                                         <p class="help is-danger">{{ $message }}</p>
@@ -34,7 +34,7 @@
                                         <div class="control">
                                             <textarea name="description"
                                                       class="textarea @error('description') is-danger @enderror"
-                                                      type="text" placeholder="Description of the project..."></textarea>
+                                                      type="text" placeholder="Description of the recipe..."></textarea>
                                         </div>
                                         @error('description')
                                         <p class="help is-danger">{{ $message }}</p>
@@ -45,7 +45,7 @@
                                         <label class="label">Budget</label>
                                         <div class="control">
                                             <input name="budget" class="input @error('budget') is-danger @enderror"
-                                                   type="text" placeholder="Budget for the project...">
+                                                   type="text" placeholder="Budget for the recipe...">
                                         </div>
                                         @error('budget')
                                         <p class="help is-danger">{{ $message }}</p>
