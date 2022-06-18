@@ -24,7 +24,7 @@
                     </div>
                     <div class="control">
                         <button class="button is-primary"
-                                onclick=window.location.href="{{route('projects.edit', $project)}}">
+                                onclick=window.location.href="{{route('recipes.edit', $project)}}">
                             Edit Project
                         </button>
                     </div>

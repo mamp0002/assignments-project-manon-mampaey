@@ -16,7 +16,7 @@
             <div class="columns">
                 <div class="column is-full">
                     <div class="has-text-right">
-                        <a href="{{route('projects.create')}}" class="button is-primary">Add a new project...</a>
+                        <a href="{{route('recipes.create')}}" class="button is-primary">Add a new project...</a>
                     </div>
                     <table class="table is-fullwidth is-striped">
                         <thead>
@@ -33,7 +33,7 @@
                                 <td>{{ $project->description }}</td>
                                 <td>€ {{ $project->budget }}</td>
                                 <td class='{{$project->type==='expensive' ? 'has-background-danger':'has-background-success'}}'>{{ $project->type }}</td>
-                                <td><a class="panel-block" href="{{ route('projects.show', $project) }}">Show</a></td>
+                                <td><a class="panel-block" href="{{ route('recipes.show', $project) }}">Show</a></td>
                             </tr>
                         @endforeach
                         </tbody>

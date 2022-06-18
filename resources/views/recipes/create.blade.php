@@ -5,7 +5,7 @@
         <div class="container">
             <div class="columns">
                 <div class="column is-12"> {{-- These divs are needed for proper layout --}}
-                    <form method="POST" action="{{ route('projects.store') }}">
+                    <form method="POST" action="{{ route('recipes.store') }}">
                         @csrf
                         <div class="card"> {{-- The form is placed inside a Bulma Card component --}}
                             <header class="card-header">
@@ -62,7 +62,7 @@
                                         <button type="reset" class="button is-warning">Reset</button>
                                     </div>
                                     <div class="control">
-                                        <a type="button" href="{{route('projects.index')}}" class="button is-light">Cancel</a>
+                                        <a type="button" href="{{route('recipes.index')}}" class="button is-light">Cancel</a>
                                     </div>
                                 </div>
                             </div>

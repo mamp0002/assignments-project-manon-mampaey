@@ -5,7 +5,7 @@
         <div class="container">
             <div class="columns">
                 <div class="column is-12"> {{-- These divs are needed for proper layout --}}
-                    <form method="POST" action="{{ route('projects.update', $project) }}">
+                    <form method="POST" action="{{ route('recipes.update', $project) }}">
                         @csrf
                         @method('PUT')
                         <div class="card"> {{-- The form is placed inside a Bulma Card component --}}
@@ -63,13 +63,13 @@
                                         <button type="reset" class="button is-warning">Reset</button>
                                     </div>
                                     <div class="control">
-                                        <a type="button" href="{{ route('projects.show', $project) }}" class="button is-light">Cancel</a>
+                                        <a type="button" href="{{ route('recipes.show', $project) }}" class="button is-light">Cancel</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </form>
-                    <form method="POST" action="{{route('projects.destroy', $project)}}">
+                    <form method="POST" action="{{route('recipes.destroy', $project)}}">
                         @csrf
                         @method('DELETE')
                         <button  class="button is-primary" type="submit">Delete</button>
