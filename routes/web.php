@@ -1,5 +1,6 @@
 <?php
 
+
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -12,6 +13,7 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+URL::forceScheme('https');
 
 Route::get('/', function () {
     return view('welcome');
@@ -22,4 +24,4 @@ Route::resource('/projects', \App\Http\Controllers\ProjectController::class);
 
 Auth::routes();
 
-URL::forceScheme('https');
+
