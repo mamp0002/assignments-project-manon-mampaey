@@ -4,7 +4,7 @@
     <section class="hero is-small is-primary">
         <div class="hero-body">
             <div class="container">
-                <p class="title is-2">Recipes</p>
+                <h2 class="title is-2">Recipes</h2>
                 <p class="subtitle is-3">Collection of Recipes</p>
 
             </div>
