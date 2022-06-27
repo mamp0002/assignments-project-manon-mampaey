@@ -19,10 +19,10 @@
                                 <div class="content">
 
                                     {{-- Here are all the form fields --}}
-                                    <div class="field">
-                                        <label class="label">Title</label>
-                                        <div class="control">
-                                            <input name="title" class="input @error('title') is-danger @enderror"
+                                    <div class="mb-3">
+                                        <label for="title">Title</label>
+                                        <div>
+                                            <input name="title" class="form-control @error('title') is-danger @enderror"
                                                    type="text" value="{{$recipe->title}}">
                                         </div>
                                         @error('title')
@@ -30,11 +30,11 @@
                                         @enderror
                                     </div>
 
-                                    <div class="field">
-                                        <label class="label">Description</label>
-                                        <div class="control">
+                                    <div class="mb-3">
+                                        <label for="description">Description</label>
+                                        <div>
                                             <textarea name="description"
-                                                      class="textarea @error('description') is-danger @enderror"
+                                                      class="form-control @error('description') is-danger @enderror"
                                                       type="text">{{$recipe->description}}</textarea>
                                         </div>
                                         @error('description')
@@ -42,11 +42,13 @@
                                         @enderror
                                     </div>
 
-                                    <div class="field">
-                                        <label class="label">Time</label>
-                                        <div class="control">
-                                            <input name="time" class="input @error('time') is-danger @enderror"
-                                                   type="text" value="{{$recipe->time}}">
+                                    <div class="mb-3">
+                                        <label for="time">Approximated time</label>
+                                        <div>
+                                            <label>
+                                                <input name="time" class="form-control @error('time') is-danger @enderror"
+                                                       type="number" min="1" value="{{$recipe->time}}">
+                                            </label>
                                         </div>
                                         @error('time')
                                         <p class="help is-danger">{{ $message }}</p>
@@ -57,7 +59,7 @@
                                 <div class="field is-grouped">
                                     {{-- Here are the form buttons: save, reset and cancel --}}
                                     <div class="control">
-                                        <button type="submit" class="button is-primary">Save</button>
+                                        <button type="submit" class="btn btn-info btn-lg btn-block">Save</button>
                                     </div>
                                     <div class="control">
                                         <button type="reset" class="button is-warning">Reset</button>
@@ -72,7 +74,7 @@
                     <form method="POST" action="{{route('recipes.destroy', $recipe)}}">
                         @csrf
                         @method('DELETE')
-                        <button  class="button is-primary" type="submit">Delete</button>
+                        <button  class="btn btn-warning btn-lg btn-block" type="submit">Delete</button>
                     </form>
                 </div>
             </div>
