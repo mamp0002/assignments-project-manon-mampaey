@@ -29,7 +29,7 @@
                         </thead>
                         <tbody>
                         @foreach($recipes as $recipe)
-                                <td onload="getSwapiData()">{{ $recipe->title }}</td>
+                                <td>{{ $recipe->title }}</td>
                                 <td>{{ $recipe->description }}</td>
                                 <td>{{ $recipe->time }}</td>
                                 <td><a class="panel-block" href="{{ route('recipes.show', $recipe) }}">Show</a></td>
@@ -37,6 +37,9 @@
                         @endforeach
                         </tbody>
                     </table>
+                    <div  onload="getSwapiData()" id="divv">
+
+                    </div>
                 </div>
             </div>
         </div>
@@ -47,10 +50,12 @@
      * Function to get the data from the Swapi API and deliver it to the DOM
      */
     function getSwapiData() {
+        console.log('loading');
         fetch("https://swapi.dev/api/people/1/")
             .then((response) => response.json())
             .then((data) => {
-                const ul = document.createElement("ul");
+                const div = document.getElementById('divv');
+                const ul = div.createElement('ul');
                 ul.innerHTML = `<li>${data.name}</li>`;
                 domElement.append(ul);
             })
