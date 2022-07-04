@@ -18,6 +18,7 @@
                     <div class="has-text-right">
                         <a href="{{route('recipes.create')}}" class="button is-primary">Add a new recipe...</a>
                     </div>
+                    <p>joeee</p>
                     <table class="table is-fullwidth is-striped">
                         <thead>
                         <tr>
