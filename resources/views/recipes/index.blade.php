@@ -18,7 +18,6 @@
                     <div class="has-text-right">
                         <a href="{{route('recipes.create')}}" class="button is-primary">Add a new recipe...</a>
                     </div>
-                    <p>joeee</p>
                     <table class="table is-fullwidth is-striped">
                         <thead>
                         <tr>
@@ -52,7 +51,7 @@
      */
     function getSwapiData() {
         console.log('loading');
-        fetch("https://swapi.dev/api/people/1/")
+        fetch("https://api.spoonacular.com/recipes/complexSearch")
             .then((response) => response.json())
             .then((data) => {
                 const div = document.getElementById('divv');
