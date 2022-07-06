@@ -18,7 +18,7 @@ function getRecipeData() {
         .then((response) => response.json())
         .then((data) => {
             const ul = document.createElement("ul");
-            ul.innerHTML = `<li>${data.title}</li>`;
+            ul.innerHTML = `<li>${data.title}</li><li>${data.image}</li>`;
             divElement.append(ul);
         })
         .catch((err) => {
