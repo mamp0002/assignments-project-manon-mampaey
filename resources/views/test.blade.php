@@ -10,4 +10,4 @@
 <div id="starwars"></div>
 </body>
 </html>
-<script src="public/js/swapidata.js"></script>
+<script src="/js/swapidata.js"></script>
