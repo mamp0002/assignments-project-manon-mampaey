@@ -37,8 +37,8 @@
                         @endforeach
                         </tbody>
                     </table>
-                    <div id="recipeList"></div>
                 </div>
+                <div id="recipeList"></div>
             </div>
         </div>
     </section>
