@@ -14,12 +14,12 @@ getRecipeData();
  * Function to get the data from the Swapi API and deliver it to the DOM
  */
 function getRecipeData() {
-    // for(let id=0; id<20; id++) {
+    for(let id=0; id<20; id++) {
         fetch("https://api.spoonacular.com/recipes/20/information?apiKey=1c7af600c31849ffb7c53b4be2921913")
             .then((response) => response.json())
             .then((data) => {
                 console.log(data.title);
-                // if(data.title !== undefined) {
+                if(data.title !== undefined) {
                     const td = document.createElement("td");
                     const td1 = document.createElement("td");
                     const td2 = document.createElement("td");
@@ -38,11 +38,11 @@ function getRecipeData() {
                     tableBody.append(td1);
                     tableBody.append(td2);
                     tableBody.append(td3);
-                // }
+                }
             })
             .catch((err) => {
                 console.log("something went wrong", err);
             });
-    // }
+    }
 }
 
