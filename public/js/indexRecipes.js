@@ -1,6 +1,6 @@
 console.log("indexRecipes");
 
-const domElement = document.getElementById("starwars");
+const domElement = document.getElementById("recipeList");
 
 /**
  * Example 2
