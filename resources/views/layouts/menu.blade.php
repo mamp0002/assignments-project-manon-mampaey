@@ -5,11 +5,5 @@
                     <p>Overview of recipes</p>
                 </a>
             </div>
-            <div class="nav-item">
-                <a href="{{ route('test') }}" class="nav-link active btn text-left bg-gray-dark">
-                    <i class="nav-icon fas fa-clipboard-list"></i>
-                    <p>Test</p>
-                </a>
-            </div>
         </li>
 

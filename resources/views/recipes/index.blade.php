@@ -18,7 +18,7 @@
                     <div class="has-text-right">
                         <a href="{{route('recipes.create')}}" class="button is-primary">Add a new recipe...</a>
                     </div>
-                    <table onload="getSwapiData()" class="table is-fullwidth is-striped">
+                    <table class="table is-fullwidth is-striped">
                         <thead>
                         <tr>
                             <th>Recipe title</th>
@@ -37,6 +37,8 @@
                         @endforeach
                         </tbody>
                     </table>
+                    <div id="recipeList"></div>
+                    <script src="public/js/indexRecipes.js"></script>
                 </div>
             </div>
         </div>
