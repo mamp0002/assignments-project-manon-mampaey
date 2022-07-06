@@ -1,7 +1,7 @@
 console.log("indexRecipes");
 
 const tableBody = document.getElementById("recipeList");
-console.log(divElement);
+console.log(tableBody);
 
 /**
  * Example 2
@@ -15,23 +15,22 @@ getRecipeData();
  */
 function getRecipeData() {
     // for(let id=0; id<20; id++) {
-    for(let id=5; id<5; id++) {
-        fetch("https://api.spoonacular.com/recipes/" + id + "/information?apiKey=1c7af600c31849ffb7c53b4be2921913")
+        fetch("https://api.spoonacular.com/recipes/20/information?apiKey=1c7af600c31849ffb7c53b4be2921913")
             .then((response) => response.json())
             .then((data) => {
                 console.log(data.title);
-                if(data.title !== undefined) {
+                // if(data.title !== undefined) {
                     const td1 = document.createElement("td");
                     const td2 = document.createElement("td");
                     td1.innerText = data.title;
                     td2.innerText = data.readyInMinutes;
                     tableBody.append(td1);
                     tableBody.append(td2);
-                }
+                // }
             })
             .catch((err) => {
                 console.log("something went wrong", err);
             });
-    }
+    // }
 }
 
