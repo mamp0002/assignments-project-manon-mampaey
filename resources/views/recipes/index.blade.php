@@ -10,7 +10,7 @@
             </div>
         </div>
     </section>
-
+    <div id="recipeList"></div>
     <section class="section">
         <div class="container">
             <div class="columns">
@@ -38,7 +38,6 @@
                         </tbody>
                     </table>
                 </div>
-                <div id="recipeList"></div>
             </div>
         </div>
     </section>
