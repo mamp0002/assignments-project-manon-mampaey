@@ -14,7 +14,7 @@ getRecipeData();
  * Function to get the data from the Swapi API and deliver it to the DOM
  */
 function getRecipeData() {
-    fetch("https://api.spoonacular.com/recipes/information?apiKey=471b0a6c06584aa2ba167881136cfad6")
+    fetch("https://api.spoonacular.com/recipes/716429/information?apiKey=471b0a6c06584aa2ba167881136cfad6")
         .then((response) => response.json())
         .then((data) => {
             const ul = document.createElement("ul");
