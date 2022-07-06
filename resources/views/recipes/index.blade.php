@@ -20,13 +20,20 @@
                     <table class="table is-fullwidth is-striped">
                         <thead>
                         <tr>
-                            <th></th>
-                            <th></th>
+                            <th>Recipe title</th>
+                            <th>Time</th>
                             <th></th>
                             <th></th>
                         </tr>
                         </thead>
                         <tbody id="recipeList">
+                        @foreach($recipes as $recipe)
+                                <td>{{ $recipe->title }}</td>
+                                <td>{{ $recipe->description }}</td>
+                                <td>{{ $recipe->time }}</td>
+                                <td><a class="panel-block" href="{{ route('recipes.show', $recipe) }}">Show</a></td>
+                            </tr>
+                        @endforeach
                         </tbody>
                     </table>
                 </div>
