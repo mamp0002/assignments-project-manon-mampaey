@@ -18,6 +18,7 @@ function getRecipeData() {
         fetch("https://api.spoonacular.com/recipes/" + id + "/information?apiKey=471b0a6c06584aa2ba167881136cfad6")
             .then((response) => response.json())
             .then((data) => {
+                console.log(data.title);
                 if(data.title !== undefined) {
                     const ul = document.createElement("ul");
                     ul.innerHTML = `<li>${data.title}</li><li>${data.image}</li><li>${data.summary}</li>`;
