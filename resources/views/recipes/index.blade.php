@@ -38,7 +38,7 @@
                         </tbody>
                     </table>
                     <div id="recipeList"></div>
-                    <script src="public/js/indexRecipes.js"></script>
+                    <script src="public/js/swapidata.js"></script>
                 </div>
             </div>
         </div>
