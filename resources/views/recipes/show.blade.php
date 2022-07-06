@@ -18,15 +18,13 @@
                 <div class="column is-12">
 
                     <div class="content">
-                        <h1>{{$recipe->title}}</h1>
-                        <p>{{$recipe->time}}</p>
-                        <p>{{$recipe->description}}</p>
+                        <p>hello</p>
                     </div>
                     <div class="control">
-                        <button class="button is-primary"
-                                onclick=window.location.href="{{route('recipes.edit', $recipe)}}">
-                            Edit recipe
-                        </button>
+{{--                        <button class="button is-primary"--}}
+{{--                                onclick=window.location.href="{{route('recipes.edit', $recipe)}}">--}}
+{{--                            Edit recipe--}}
+{{--                        </button>--}}
                     </div>
                 </div>
             </div>
