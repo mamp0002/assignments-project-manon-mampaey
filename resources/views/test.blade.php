@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Programming basics - template</title>
+    <title>Programming basics</title>
     <link rel="stylesheet" href="./assets/css/style.css" />
 </head>
 <body>
-<h1>Example 2 - AJAX call using fetch API</h1>
+<h1>Example 2 - AJAX call using fh API</h1>
 <div id="starwars"></div>
-<script src="./assets/js/app.js"></script>
+<script src="resources/js/app.js"></script>
 </body>
 </html>
