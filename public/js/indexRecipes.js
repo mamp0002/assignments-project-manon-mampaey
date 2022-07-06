@@ -25,7 +25,12 @@ function getRecipeData() {
                     const td3 = document.createElement("td");
                     td1.innerText = data.title;
                     td2.innerText = data.readyInMinutes;
-                    td3.innerText = data.vegetarian;
+                    if(data.vegetarian === true) {
+                        td3.innerHTML = `<span class="badge badge-info">vegetarian</span>`;
+                    } else {
+                        td3.innerHTML = `<span class="badge badge-info">non-vegetarian</span>`;
+                    }
+
                     tableBody.append(td1);
                     tableBody.append(td2);
                     tableBody.append(td3);
