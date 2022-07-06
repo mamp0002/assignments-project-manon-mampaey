@@ -1,6 +1,7 @@
 console.log("indexRecipes");
 
-const domElement = document.getElementById("recipeList");
+const divElement = document.getElementById("recipeList");
+console.log(divElement);
 
 /**
  * Example 2
@@ -18,7 +19,7 @@ function getRecipeData() {
         .then((data) => {
             const ul = document.createElement("ul");
             ul.innerHTML = `<li>${data.title}</li>`;
-            domElement.append(ul);
+            divElement.append(ul);
         })
         .catch((err) => {
             console.log("something went wrong", err);
