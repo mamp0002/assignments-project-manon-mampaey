@@ -26,7 +26,7 @@
                             <th></th>
                         </tr>
                         </thead>
-                        <tbody>
+                        <tbody id="recipeList">
                         @foreach($recipes as $recipe)
                                 <td>{{ $recipe->title }}</td>
                                 <td>{{ $recipe->description }}</td>
@@ -37,7 +37,6 @@
                         </tbody>
                     </table>
                 </div>
-                <div id="recipeList"></div>
             </div>
         </div>
     </section>
