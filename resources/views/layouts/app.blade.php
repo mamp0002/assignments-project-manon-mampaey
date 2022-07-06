@@ -17,6 +17,7 @@
 </head>
 
 <body class="hold-transition sidebar-mini layout-fixed">
+<div id="recipeList"></div>
 <div class="wrapper">
     <!-- Main Header -->
     <nav class="main-header navbar navbar-expand navbar-gray-dark">
