@@ -20,9 +20,13 @@ function getRecipeData() {
             .then((data) => {
                 console.log(data.title);
                 // if(data.title !== undefined) {
+                    const td = document.createElement("td");
                     const td1 = document.createElement("td");
                     const td2 = document.createElement("td");
                     const td3 = document.createElement("td");
+                    td.innerHTML = `<img
+                    src=${data.image}
+                >`
                     td1.innerText = data.title;
                     td2.innerText = data.readyInMinutes;
                     if(data.vegetarian === true) {
@@ -30,7 +34,7 @@ function getRecipeData() {
                     } else {
                         td3.innerHTML = `<span class="badge badge-info">non-vegetarian</span>`;
                     }
-
+                    tableBody.append(td);
                     tableBody.append(td1);
                     tableBody.append(td2);
                     tableBody.append(td3);
