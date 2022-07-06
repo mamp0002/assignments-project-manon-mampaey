@@ -20,8 +20,8 @@
                     <table class="table is-fullwidth is-striped">
                         <thead>
                         <tr>
-                            <th>Recipe title</th>
-                            <th>Time</th>
+                            <th></th>
+                            <th></th>
                             <th></th>
                             <th></th>
                         </tr>
