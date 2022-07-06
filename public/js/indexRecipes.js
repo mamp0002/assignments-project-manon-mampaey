@@ -23,6 +23,7 @@ function getRecipeData() {
                     const td1 = document.createElement("td");
                     const td2 = document.createElement("td");
                     td1.innerText = data.title;
+                    console.log(data.vegetarian);
                     td2.innerText = data.readyInMinutes;
                     tableBody.append(td1);
                     tableBody.append(td2);
