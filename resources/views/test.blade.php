@@ -8,6 +8,6 @@
 <body>
 <h1>Example 2 - AJAX call using fetch API</h1>
 <div id="starwars"></div>
-<script src="public/js/swapidata.js"></script>
 </body>
 </html>
+<script src="public/js/swapidata.js"></script>

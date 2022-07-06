@@ -4,7 +4,7 @@
     <section class="hero is-small is-primary">
         <div class="hero-body">
             <div class="container">
-                <h2 class="title is-2">Recipes</h2>
+                <h2 class="title is-2">Recipes!</h2>
                 <p class="subtitle is-3">Collection of Recipes</p>
 
             </div>
@@ -38,29 +38,11 @@
                         </tbody>
                     </table>
                     <div id="recipeList"></div>
-                    <script src="/public/js/swapidata.js"></script>
                 </div>
             </div>
         </div>
     </section>
 @endsection
-<script>
-    /**
-     * Function to get the data from the Swapi API and deliver it to the DOM
-     */
-    function getSwapiData() {
-        console.log('loading');
-        fetch("https://api.spoonacular.com/recipes/complexSearch")
-            .then((response) => response.json())
-            .then((data) => {
-                const div = document.getElementById('divv');
-                const ul = div.createElement('ul');
-                ul.innerHTML = `<li>${data.name}</li>`;
-                domElement.append(ul);
-            })
-            .catch((err) => {
-                console.log("something went wrong", err);
-            });
-    }
-</script>
+<script src="/js/indexRecipes.js"></script>
+
 
