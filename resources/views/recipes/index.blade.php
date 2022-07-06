@@ -37,10 +37,12 @@
                         </tbody>
                     </table>
                 </div>
+                <div id="recipeList"></div>
             </div>
         </div>
     </section>
+    <script src="/js/indexRecipes.js"></script>
 @endsection
-<script src="/js/indexRecipes.js"></script>
+
 
 
