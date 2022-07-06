@@ -27,9 +27,8 @@ function getRecipeData() {
                     const td3 = document.createElement("td");
                     td.innerHTML = `<img
                     src=${data.image}
-                    style="width: 50%; height: 50%"
                 >`
-                    td1.innerHTML = `<h2>${data.title}</h2>`;
+                    td1.innerHTML = `<h4>${data.title}</h4>`;
                     td2.innerText = `${data.readyInMinutes} minutes to make`;
                     if(data.vegetarian === true) {
                         td3.innerHTML = `<span class="badge badge-info">vegetarian</span>`;
