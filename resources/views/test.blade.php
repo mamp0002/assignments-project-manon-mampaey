@@ -9,6 +9,6 @@
 <body>
 <h1>Example 2 - AJAX call using fh API</h1>
 <div id="starwars"></div>
-<script src="resources/js/app.js"></script>
+<script src="/js/app.js"></script>
 </body>
 </html>
