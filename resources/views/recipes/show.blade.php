@@ -4,7 +4,7 @@
     <section class="hero  is-medium  is-bold is-primary"  style="background: no-repeat center center; background-size: cover;" >
         <div class="hero-body">
             <div class="container">
-                <p class="title is-2">{{$recipe->title}}</p>
+                <p class="title is-2"></p>
                 <p class="subtitle is-3"></p>
 
             </div>
