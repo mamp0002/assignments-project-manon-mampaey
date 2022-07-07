@@ -45,7 +45,6 @@ function getRecipeData() {
             .catch((err) => {
                 console.log("something went wrong", err);
             });
-        let
     }
 }
 

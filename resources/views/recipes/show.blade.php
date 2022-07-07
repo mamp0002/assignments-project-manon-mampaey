@@ -19,6 +19,7 @@
 
                     <div class="content">
                         <p>hello</p>
+                        <p>{{$recipe_id}}</p>
                     </div>
                     <div class="control">
 {{--                        <button class="button is-primary"--}}
