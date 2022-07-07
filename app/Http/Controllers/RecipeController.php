@@ -52,9 +52,9 @@ class RecipeController extends Controller
      * @param  \App\Models\Recipe  $recipe
      * @return \Illuminate\Http\Response
      */
-    public function show($recipe_id)
+    public function show($recipe)
     {
-        return view('recipes.show', compact('recipe_id'));
+        return view('recipes.show', compact('recipe'));
     }
 
     /**

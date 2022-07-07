@@ -36,7 +36,7 @@ function getRecipeData() {
                     } else {
                         veg_td.innerHTML = `<span class="badge badge-info">non-vegetarian</span>`;
                     }
-                    show_td.innerHTML = `<a class="panel-block" href="${data.id}/show">Show</a>`
+                    show_td.innerHTML = `<a class="panel-block" href="${data.id}">Show</a>`
                     tr.append(img_td, title_td, time_td, veg_td, show_td);
                     tableBody.append(tr);
                 }
