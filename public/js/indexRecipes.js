@@ -25,7 +25,7 @@ function getRecipeData() {
                     const title_td = document.createElement("td");
                     const time_td = document.createElement("td");
                     const veg_td = document.createElement("td");
-                    const show_td = document.createElement("td");
+                    // const show_td = document.createElement("td");
                     img_td.innerHTML = `<img
                     src=${data.image}
                 >`
@@ -36,8 +36,10 @@ function getRecipeData() {
                     } else {
                         veg_td.innerHTML = `<span class="badge badge-info">non-vegetarian</span>`;
                     }
-                    show_td.innerHTML = `<a class="panel-block" href="${data.id}">Show</a>`
-                    tr.append(img_td, title_td, time_td, veg_td, show_td);
+                    // show_td.innerHTML = `<a class="panel-block" href="${data.id}">Show</a>`
+                    tr.append(img_td, title_td, time_td, veg_td
+                        // , show_td
+                    );
                     tableBody.append(tr);
                 }
             })
