@@ -13,7 +13,7 @@ function init() {
 function getSpecificRecipe(id) {
     const showElement = document.getElementById("recipe");
     console.log(showElement);
-    fetch("https://api.spoonacular.com/recipes/" + id + "/information?apiKey=471b0a6c06584aa2ba167881136cfad6")
+    fetch("https://api.spoonacular.com/recipes/" + id + "/information?apiKey=759a512353284f79b501969c5f81f922")
         .then((response) => response.json())
         .then((data) => {
             const h2 = document.createElement("h2");
