@@ -30,15 +30,10 @@
         <ul class="navbar-nav ml-auto">
             <li class="nav-item dropdown user-menu">
                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
-                    <img src="img/pokeball.png"
-                         class="user-image img-circle elevation-2" alt="User Image">
                 </a>
                 <ul class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
                     <!-- User image -->
                     <li class="user-header bg-light">
-                        <img src="img/pokeball.png"
-                             class="img-circle elevation-2"
-                             alt="User Image">
                         <p>
                         <h6> {{ Auth::user()->name }}</h6>
                         <small>Member since {{ Auth::user()->created_at->format('M. Y') }}</small>
