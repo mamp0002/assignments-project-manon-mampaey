@@ -17,11 +17,7 @@
 
                 <div class="column is-12">
 
-                    <div class="content">
-                        <h2 id="">Recipe Title</h2>
-                        <img recipe image>
-                        <p>Recipe description</p>
-                        <p>more stuff</p>
+                    <div class="content" id="recipe">
                     </div>
                     <div class="control">
                     </div>

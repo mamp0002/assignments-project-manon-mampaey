@@ -1,7 +1,7 @@
 console.log("indexRecipes");
 
-const divElement = document.getElementById("recipeList");
-console.log(divElement);
+const showElement = document.getElementById("recipe");
+console.log(showElement);
 
 /**
  * Example 2
@@ -17,9 +17,14 @@ function getSpecificRecipe() {
     fetch("https://api.spoonacular.com/recipes/716429/information?apiKey=471b0a6c06584aa2ba167881136cfad6")
         .then((response) => response.json())
         .then((data) => {
-            const ul = document.createElement("ul");
-            ul.innerHTML = `<li>${data.title}</li><li>${data.image}</li><li>${data.summary}</li>`;
-            divElement.append(ul);
+            const h2 = document.createElement("h2");
+            const divImg = document.createElement("div");
+            const descr = document.createElement("p");
+
+            h2.innerText = data.title;
+            divImg.innerHTML = `<img src=${data.image}>`;
+            descr.innerText = data.summary;
+            showElement.append(h2, divImg, descr);
         })
         .catch((err) => {
             console.log("something went wrong", err);
