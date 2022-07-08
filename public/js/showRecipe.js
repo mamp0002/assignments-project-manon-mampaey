@@ -1,8 +1,8 @@
 window.addEventListener("load", init);
 
 function init() {
-    const baseUrl = (window.location).href; // You can also use document.URL
-    const id = baseUrl.substring(baseUrl.lastIndexOf('/') + 1);
+    const url = (window.location).href;
+    const id = url.substring(url.lastIndexOf('/') + 1);
     console.log(id);
     getSpecificRecipe(id);
 }
