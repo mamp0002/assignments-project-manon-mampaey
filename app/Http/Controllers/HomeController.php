@@ -23,7 +23,7 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return redirect('recipes.index');
+        return redirect(route('recipes.index'));
     }
 
     public function test()
