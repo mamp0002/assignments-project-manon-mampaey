@@ -22,7 +22,7 @@ function getSpecificRecipe(id) {
 
             h2.innerText = data.title;
             divImg.innerHTML = `<img src=${data.image}>`;
-            descr.innerText = data.summary;
+            descr.innerHTML = data.summary;
             showElement.append(h2, divImg, descr);
         })
         .catch((err) => {
