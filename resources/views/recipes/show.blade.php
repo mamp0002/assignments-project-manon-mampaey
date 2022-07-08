@@ -17,7 +17,7 @@
 
                 <div class="column is-12">
 
-                    <div class="content" id="recipe" onload="getSpecificRecipe({{$recipe_id}})">
+                    <div class="content" id="recipe">
                     </div>
                     <div class="control">
                     </div>

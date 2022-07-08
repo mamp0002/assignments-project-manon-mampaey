@@ -1,14 +1,12 @@
-console.log("indexRecipes");
+window.addEventListener("load", init);
 
+function init() {
+    const baseUrl = (window.location).href; // You can also use document.URL
+    const id = baseUrl.substring(baseUrl.lastIndexOf('/') + 1);
+    console.log(id);
+    getSpecificRecipe(id);
+}
 
-
-/**
- * Example 2
- * Get data from https://swapi.dev/api/people/1/ using Fetch API
- */
-
-// function call
-getRecipeData();
 /**
  * Function to get the data from the Swapi API and deliver it to the DOM
  */
