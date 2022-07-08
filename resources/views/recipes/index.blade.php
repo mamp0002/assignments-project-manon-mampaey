@@ -12,9 +12,6 @@
         <div class="container">
             <div class="columns">
                 <div class="column is-full">
-{{--                    <div class="has-text-right">--}}
-{{--                        <a href="{{route('recipes.create')}}" class="button is-primary">Add a new recipe...</a>--}}
-{{--                    </div>--}}
                     <table class="table is-fullwidth is-striped">
                         <thead>
                         <tr>
