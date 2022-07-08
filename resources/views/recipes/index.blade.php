@@ -27,11 +27,6 @@
                         </tr>
                         </thead>
                         <tbody id="recipeList">
-                        @foreach( $recipes as $recipe )
-                        <tr>
-                            <td><a class="panel-block" href="{{Route('recipes.show',$recipe->id)}}">Show</a></td>
-                        </tr>
-                        @endforeach
                         </tbody>
                     </table>
                 </div>

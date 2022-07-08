@@ -18,18 +18,17 @@
                 <div class="column is-12">
 
                     <div class="content">
-                        <p>hello</p>
-                        <p>{{$recipe_id}}</p>
+                        <h2 id="">Recipe Title</h2>
+                        <img recipe image>
+                        <p>Recipe description</p>
+                        <p>more stuff</p>
                     </div>
                     <div class="control">
-{{--                        <button class="button is-primary"--}}
-{{--                                onclick=window.location.href="{{route('recipes.edit', $recipe)}}">--}}
-{{--                            Edit recipe--}}
-{{--                        </button>--}}
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    <script src="/js/showRecipe.js"></script>
 @endsection
 
