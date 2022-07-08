@@ -4,9 +4,7 @@
     <section class="hero is-small is-primary">
         <div class="hero-body">
             <div class="container">
-                <h2 class="title is-2">Recipes!</h2>
-                <p class="subtitle is-3">Collection of Recipes</p>
-
+                <h2 class="title is-2">Recipes</h2>
             </div>
         </div>
     </section>
@@ -14,9 +12,9 @@
         <div class="container">
             <div class="columns">
                 <div class="column is-full">
-                    <div class="has-text-right">
-                        <a href="{{route('recipes.create')}}" class="button is-primary">Add a new recipe...</a>
-                    </div>
+{{--                    <div class="has-text-right">--}}
+{{--                        <a href="{{route('recipes.create')}}" class="button is-primary">Add a new recipe...</a>--}}
+{{--                    </div>--}}
                     <table class="table is-fullwidth is-striped">
                         <thead>
                         <tr>
